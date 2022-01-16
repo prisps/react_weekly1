@@ -59,17 +59,13 @@ function App() {
             <Col>
               <AddButton onAddLinkProps={onAddLink}/>
             </Col>
-
             <Col>
-            
               <SearchBar onSearchChangeProp={onSearchChange}/>
               <h5>search results for {search}</h5>
               <LinkList links={filteredLinks(search)}/>
               <p>{links.length} links saved</p>
               <ClearAll/>
             </Col>
-
-            
           </Row>
         </Container>
 

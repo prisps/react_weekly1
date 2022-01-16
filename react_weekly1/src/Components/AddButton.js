@@ -56,7 +56,6 @@ export default function AddButton (props) {
                 value={url}
                 onChange={(e) => setUrl(e.currentTarget.value)}/>
                 </Form.Group>
-
             </Form>
 
            {tags && tags.length > 0
@@ -81,11 +80,9 @@ export default function AddButton (props) {
 
             </Modal.Body>
         <Modal.Footer>
-
           <Button variant="secondary" onClick={handleClose}>
             Never mind
           </Button>
-
           <Button variant="outline-warning" onClick={addLink}>
             Let's add this link
           </Button>
